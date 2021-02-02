@@ -314,7 +314,7 @@ endif
 
 .PHONY: deps
 deps: | $(NETRC_FILE)
-	XCODE_XCCONFIG_FILE=${PWD}/xcode-12.xcconfig carthage bootstrap --platform iOS --use-netrc --no-cache-builds
+	XCODE_XCCONFIG_FILE=${PWD}/xcode-12.xcconfig carthage update --platform iOS --use-netrc --no-cache-builds
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Validation
